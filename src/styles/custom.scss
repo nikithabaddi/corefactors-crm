@@ -1,0 +1,65 @@
+// Custom SCSS styles for accessibility and overrides
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap');
+
+body, html {
+  font-family: 'Poppins', Arial, sans-serif;
+  /* width: 100vw; */
+  overflow-x: hidden;
+}
+
+.bg-hero-gradient {
+  background: radial-gradient(ellipse at center, #2a3b6e 0%, #0a0a3c 70%, #18184a 100%);
+}
+
+.btn-img1 {
+  display: inline-block;
+  background: #4094f7;
+  color: #fff;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+  min-height: 44px;
+  padding: 0 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(59,130,246,0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-img1:focus {
+  box-shadow: 0 0 0 4px #60a5fa;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.08;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -1px;
+  max-width: none;
+}
+.hero-title .highlight {
+  color: #22e37b;
+  letter-spacing: -0.5px;
+}
+.hero-section-center {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-subtitle {
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  font-weight: 400;
+  white-space: nowrap;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
