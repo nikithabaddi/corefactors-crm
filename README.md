@@ -143,7 +143,7 @@ The application is fully responsive and works on:
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Nikitha Baddi - Initial work
 
 ## 🙏 Acknowledgments
 
