@@ -6,7 +6,7 @@ A modern, accessible, and responsive web application for booking CRM software de
 
 ## 🔗 Live Demo
 
-Check out the live demo: [Corefactors CRM Demo](https://your-netlify-url.netlify.app)
+Check out the live demo: [Corefactors CRM Demo](https://corefactors-crm.netlify.app/)
 
 ## 🌟 Features
 
@@ -60,7 +60,7 @@ Check out the live demo: [Corefactors CRM Demo](https://your-netlify-url.netlify
    yarn start
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 🛠️ Project Structure
 
@@ -139,9 +139,7 @@ The application is fully responsive and works on:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Authors
 
