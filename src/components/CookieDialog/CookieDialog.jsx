@@ -7,20 +7,17 @@ const CookieDialog = ({ open, onClose }) => {
     const handleMessage = async (event) => {
      
       if (event.origin.includes('calendly.com') && event.data.event === 'calendly.event_scheduled') {
-        
         console.log("Calendly message received:", event.data);
 
         const payload = event.data.payload;
         console.log("Full invitee object:", JSON.stringify(payload.invitee, null, 2));
 
-     
         if (!payload || !payload.invitee || !payload.invitee.uri) {
           console.error("Invitee data is missing in Calendly payload", payload);
           return;
         }
 
         try {
-          
           const response = await fetch(payload.invitee.uri, {
             headers: {
               'Authorization': `Bearer ${import.meta.env.VITE_CALENDLY_API_TOKEN}`,
