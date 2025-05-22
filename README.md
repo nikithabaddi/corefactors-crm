@@ -4,6 +4,14 @@ A modern, accessible, and responsive web application for booking CRM software de
 
 ![Corefactors CRM Demo](screenshot.png)
 
+## 🔥 Latest Updates (2024)
+
+- **Full-Screen, Sectioned Layout:** Each main section (Hero, Features, CRM Boxes, Workflows, Testimonials, CTA) uses `min-h-screen` and flex utilities for a visually immersive, professional look.
+- **Interactive Cards:** Features and workflow cards now have dynamic hover effects—cards overlap by default, and on hover, the active card rises and scales up while others blur and scale down.
+- **Typography & Design:** Strong, bold headings (`text-gray-900 font-bold`), refined card text, and consistent spacing for a modern, readable interface.
+- **Calendly API Integration:** Uses a secure API token (set in `.env` or Netlify environment variables) to fetch invitee details and send booking data to Google Sheets.
+- **Troubleshooting & Deployment Tips:** See below for Netlify-specific notes and troubleshooting.
+
 ## 🔗 Live Demo
 
 Check out the live demo: [Corefactors CRM Demo](https://corefactors-crm.netlify.app/)
@@ -70,6 +78,12 @@ corefactors-crm/
 │   ├── components/
 │   │   ├── Header/
 │   │   ├── HeroSection/
+│   │   ├── FeatureCards/
+│   │   ├── Features/
+│   │   ├── Workflows/
+│   │   ├── Testimonials/
+│   │   ├── Cta/
+│   │   ├── CrmBoxes/
 │   │   └── CookieDialog/
 │   ├── styles/
 │   │   ├── tailwind.scss
@@ -86,6 +100,9 @@ corefactors-crm/
 1. Create a Calendly account
 2. Set up your event type
 3. Update the iframe URL in `CookieDialog.jsx`
+4. **Set your Calendly API token:**
+   - Locally: add `REACT_APP_CALENDLY_API_TOKEN=your_token` to your `.env` file
+   - On Netlify: add `REACT_APP_CALENDLY_API_TOKEN` in Site settings → Build & deploy → Environment → Environment variables
 
 ### Google Sheets Integration
 1. Set up Google Cloud Project
@@ -108,6 +125,12 @@ corefactors-crm/
 - Update `Header.jsx` for logo and navigation
 - Modify `HeroSection.jsx` for main content
 - Customize `CookieDialog.jsx` for booking form
+- Use `FeatureCards.jsx` for interactive feature cards
+- Use `Features.jsx` for the features section
+- Use `Workflows.jsx` for the workflows section
+- Use `Testimonials.jsx` for the testimonials section
+- Use `Cta.jsx` for the call-to-action section
+- Use `CrmBoxes.jsx` for the CRM boxes section
 
 ## 📱 Responsive Design
 
@@ -135,6 +158,12 @@ The application is fully responsive and works on:
 
 2. Deploy to your preferred hosting service (e.g., Netlify, Vercel, GitHub Pages)
 
+### Netlify Deployment & Troubleshooting
+- **Auto-deploy:** Netlify redeploys automatically when you push to the connected branch.
+- **Environment Variables:** If you add or change environment variables (e.g., `REACT_APP_CALENDLY_API_TOKEN`), update them in Netlify's dashboard and redeploy.
+- **Cache Issues:** If changes don't appear, use "Clear cache and deploy site" in Netlify's deploys page.
+- **Tailwind Issues:** If styles don't update, check your `tailwind.config.js` and try a hard refresh (Ctrl+Shift+R).
+
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -142,8 +171,6 @@ The application is fully responsive and works on:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-
 
 ## 👥 Authors
 
