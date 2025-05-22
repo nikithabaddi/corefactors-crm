@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HeroSection = ({ onRequestDemo }) => (
-  <section className="hero-section-center relative flex flex-col items-center justify-center text-center px-4" role="main">
+  <section className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-hero-gradient" role="main">
     <h1 className="hero-title mb-4">
       Simplify, Align, and Grow with <br />
       <span className="highlight">AI-Powered CRM Software</span>

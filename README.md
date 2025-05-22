@@ -88,11 +88,15 @@ corefactors-crm/
 3. Update the iframe URL in `CookieDialog.jsx`
 
 ### Google Sheets Integration
-1. Set up Zapier account
-2. Create a new Zap:
-   - Trigger: Calendly (New Scheduled Event)
-   - Action: Google Sheets (Create Spreadsheet Row)
-3. Map the fields in Zapier
+1. Set up Google Cloud Project
+2. Enable Google Sheets API
+3. Create service account credentials
+4. Configure environment variables:
+   ```
+   GOOGLE_SHEETS_ID=your_sheet_id
+   GOOGLE_SERVICE_ACCOUNT_EMAIL=your_service_account_email
+   GOOGLE_PRIVATE_KEY=your_private_key
+   ```
 
 ## 🎨 Customization
 
@@ -148,6 +152,6 @@ The application is fully responsive and works on:
 ## 🙏 Acknowledgments
 
 - Calendly for the booking system
-- Zapier for automation
+- Google Sheets API for automation
 - React.js community
 - Tailwind CSS team
