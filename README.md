@@ -114,6 +114,9 @@ corefactors-crm/
    GOOGLE_SERVICE_ACCOUNT_EMAIL=your_service_account_email
    GOOGLE_PRIVATE_KEY=your_private_key
    ```
+5. **Google Sheet Link:**
+   - [Your Google Sheet](https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID_HERE)
+   - Replace `YOUR_SHEET_ID_HERE` with your actual Google Sheets ID.
 
 ## 🎨 Customization
 
@@ -163,6 +166,20 @@ The application is fully responsive and works on:
 - **Environment Variables:** If you add or change environment variables (e.g., `REACT_APP_CALENDLY_API_TOKEN`), update them in Netlify's dashboard and redeploy.
 - **Cache Issues:** If changes don't appear, use "Clear cache and deploy site" in Netlify's deploys page.
 - **Tailwind Issues:** If styles don't update, check your `tailwind.config.js` and try a hard refresh (Ctrl+Shift+R).
+
+### Netlify Deployment
+If you have already deployed your project to Netlify:
+- **You do NOT need to change anything on Netlify** unless you have changed environment variables, build settings, or the build command.
+- **For code or UI changes:** Just push your latest code to the branch Netlify is watching (usually `main` or `master`). Netlify will auto-deploy.
+- **If you added/changed environment variables** (e.g., for Calendly API tokens), you must add/update them in the Netlify dashboard:
+  1. Go to your site on Netlify.
+  2. Site settings → Build & deploy → Environment → Environment variables.
+  3. Add or update the variables (e.g., `REACT_APP_CALENDLY_API_TOKEN`).
+  4. Redeploy the site.
+
+**If you don't see your changes live:**
+- Try a "Clear cache and deploy site" from the Netlify deploys page.
+- Hard-refresh your browser (Ctrl+Shift+R).
 
 ## 🤝 Contributing
 
